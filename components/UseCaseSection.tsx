@@ -24,7 +24,7 @@ export default function UseCaseSection({
         </div>
       </div>
 
-      <div className="bg-slate-50 rounded-2xl p-8">
+      <div className="bg-slate-50 p-8">
         <ul className="space-y-4">
           {items.map((item, index) => (
             <li key={index} className="flex items-start">

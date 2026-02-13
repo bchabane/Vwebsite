@@ -43,7 +43,7 @@ export default function Footer() {
               {/* Social Links */}
               <div className="flex items-center space-x-4">
                 <a
-                  href="https://www.linkedin.com/company/virentis"
+                  href="https://www.linkedin.com/company/virentis-ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-white transition-colors"

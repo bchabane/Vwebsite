@@ -24,7 +24,7 @@ export default function CareersPage() {
           </h2>
 
           <div className="space-y-8">
-            <div className="bg-slate-50 rounded-xl p-8">
+            <div className="bg-slate-50 p-8">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                 Large-Scale Renewable Energy Data and Systems
               </h3>
@@ -35,7 +35,7 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-slate-50 rounded-xl p-8">
+            <div className="bg-slate-50 p-8">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                 AI Models with Real Operational Consequences
               </h3>
@@ -46,7 +46,7 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-slate-50 rounded-xl p-8">
+            <div className="bg-slate-50 p-8">
               <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                 Technology That Directly Supports Decarbonization
               </h3>
@@ -117,13 +117,13 @@ export default function CareersPage() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
+            <div className="bg-white border border-slate-200 p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Senior Machine Learning Engineer</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 text-sm font-medium">
                   Engineering
                 </span>
               </div>
@@ -133,13 +133,13 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
+            <div className="bg-white border border-slate-200 p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Full-Stack Software Engineer</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 text-sm font-medium">
                   Engineering
                 </span>
               </div>
@@ -149,13 +149,13 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
+            <div className="bg-white border border-slate-200 p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Renewable Energy Analyst</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 text-sm font-medium">
                   Domain Expertise
                 </span>
               </div>

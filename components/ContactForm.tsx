@@ -127,7 +127,7 @@ export default function ContactForm() {
   }
 
   const inputClasses = (fieldName: string) => `
-    w-full px-4 py-3 rounded-lg border transition-colors
+    w-full px-4 py-3 border transition-colors
     ${errors[fieldName] 
       ? 'border-red-500 focus:border-red-500 focus:ring-red-500' 
       : 'border-slate-300 focus:border-slate-500 focus:ring-slate-500'
@@ -323,7 +323,7 @@ export default function ContactForm() {
 
       {/* Status Messages */}
       {submitStatus === 'success' && (
-        <div className="p-4 bg-green-50 border border-green-200 rounded-lg" role="alert">
+        <div className="p-4 bg-green-50 border border-green-200" role="alert">
           <p className="text-green-800 font-medium">
             Thank you! Your demo request has been submitted successfully. We'll be in touch soon.
           </p>
@@ -331,7 +331,7 @@ export default function ContactForm() {
       )}
 
       {submitStatus === 'error' && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg" role="alert">
+        <div className="p-4 bg-red-50 border border-red-200" role="alert">
           <p className="text-red-800 font-medium">
             {errorMessage}
           </p>

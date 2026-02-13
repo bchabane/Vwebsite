@@ -39,7 +39,7 @@ export default function CompanyPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 my-12">
-              <div className="bg-slate-50 rounded-xl p-8">
+              <div className="bg-slate-50 p-8">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   AI-Native from Day One
                 </h3>
@@ -49,7 +49,7 @@ export default function CompanyPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-xl p-8">
+              <div className="bg-slate-50 p-8">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   Domain-Specific Expertise
                 </h3>
@@ -59,7 +59,7 @@ export default function CompanyPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-xl p-8">
+              <div className="bg-slate-50 p-8">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   Autonomous Intelligence
                 </h3>
@@ -69,7 +69,7 @@ export default function CompanyPage() {
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-xl p-8">
+              <div className="bg-slate-50 p-8">
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   Built to Scale
                 </h3>

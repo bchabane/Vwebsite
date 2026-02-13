@@ -127,7 +127,7 @@ export default function PartnersPage() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-white p-8">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Technology Partners
               </h3>
@@ -137,7 +137,7 @@ export default function PartnersPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-white p-8">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 OEM Partners
               </h3>
@@ -147,7 +147,7 @@ export default function PartnersPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8">
+            <div className="bg-white p-8">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Service Partners
               </h3>

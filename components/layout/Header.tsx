@@ -52,8 +52,8 @@ export default function Header() {
             <span className="text-xl font-bold text-slate-900">Virentis</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          {/* Desktop Navigation - Right Aligned */}
+          <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
               <div
                 key={item.name}
@@ -63,36 +63,23 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className={`px-3 py-2 text-sm font-medium rounded-md transition-colors flex items-center gap-1 ${
-                    isActive(item.href) || (item.dropdown && isDropdownActive(item.dropdown))
-                      ? 'text-slate-900 bg-slate-100'
-                      : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
-                  }`}
+                  className="relative px-1 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors group"
                 >
                   {item.name}
-                  {item.dropdown && (
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      className={`transition-transform ${openDropdown === item.name ? 'rotate-180' : ''}`}
-                    >
-                      <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  )}
+                  {/* Underline animation on hover */}
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
                 </Link>
 
-                {/* Dropdown Menu */}
+                {/* Dropdown Menu - Clean Enterprise Style */}
                 {item.dropdown && openDropdown === item.name && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-slate-200 py-2">
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-xl border border-slate-200 py-3">
                     {item.dropdown.map((dropdownItem) => (
                       <Link
                         key={dropdownItem.name}
                         href={dropdownItem.href}
-                        className={`block px-4 py-2 text-sm transition-colors ${
+                        className={`block px-6 py-3 text-sm transition-colors ${
                           isActive(dropdownItem.href)
-                            ? 'text-slate-900 bg-slate-100 font-medium'
+                            ? 'text-slate-900 bg-slate-50 font-medium'
                             : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
                         }`}
                       >
@@ -103,10 +90,8 @@ export default function Header() {
                 )}
               </div>
             ))}
-          </div>
 
-          {/* CTA Button + Mobile Menu Toggle */}
-          <div className="flex items-center space-x-4">
+            {/* CTA Button */}
             <Button
               href="/book-a-demo"
               size="md"
@@ -114,22 +99,22 @@ export default function Header() {
             >
               Book a Demo
             </Button>
-
-            {/* Mobile Menu Toggle */}
-            <button
-              className="lg:hidden p-2 text-slate-700 hover:text-slate-900"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                {mobileMenuOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                )}
-              </svg>
-            </button>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="lg:hidden p-2 text-slate-700 hover:text-slate-900"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              {mobileMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              )}
+            </svg>
+          </button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -139,7 +124,7 @@ export default function Header() {
               <div key={item.name}>
                 <Link
                   href={item.href}
-                  className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`block px-3 py-2 text-sm font-medium transition-colors ${
                     isActive(item.href) || (item.dropdown && isDropdownActive(item.dropdown))
                       ? 'text-slate-900 bg-slate-100'
                       : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
@@ -154,7 +139,7 @@ export default function Header() {
                       <Link
                         key={dropdownItem.name}
                         href={dropdownItem.href}
-                        className={`block px-3 py-2 text-sm transition-colors rounded-md ${
+                        className={`block px-3 py-2 text-sm transition-colors ${
                           isActive(dropdownItem.href)
                             ? 'text-slate-900 bg-slate-100 font-medium'
                             : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
@@ -168,6 +153,16 @@ export default function Header() {
                 )}
               </div>
             ))}
+            <div className="px-3 pt-2">
+              <Button
+                href="/book-a-demo"
+                size="md"
+                onClick={() => trackCTAClick('Book a Demo', 'mobile-header')}
+                className="w-full"
+              >
+                Book a Demo
+              </Button>
+            </div>
           </div>
         )}
       </Container>
