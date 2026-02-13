@@ -39,10 +39,9 @@ export default function HomePage() {
   ]
 
   const stats = [
-    { value: '10+', label: 'GW Monitored' },
-    { value: '24/7', label: 'Autonomous Intelligence' },
-    { value: '3', label: 'Asset Types' },
-    { value: '99.9%', label: 'Platform Uptime' },
+    { value: '60%+', label: 'OPERATIONAL VISIBILITY' },
+    { value: '15%+', label: 'FASTER DECISION CYCLE' },
+    { value: '10x', label: 'EXECUTION SCALABILITY' },
   ]
 
   return (

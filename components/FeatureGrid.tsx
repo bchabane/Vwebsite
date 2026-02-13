@@ -23,7 +23,7 @@ export default function FeatureGrid({ features, columns = 3 }: FeatureGridProps)
       {features.map((feature, index) => (
         <div key={index} className="group">
           {feature.icon && (
-            <div className="mb-4 text-accent-600">
+            <div className="mb-4 text-slate-600">
               {feature.icon}
             </div>
           )}

@@ -117,13 +117,13 @@ export default function CareersPage() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-accent-500 transition-colors">
+            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Senior Machine Learning Engineer</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
                   Engineering
                 </span>
               </div>
@@ -133,13 +133,13 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-accent-500 transition-colors">
+            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Full-Stack Software Engineer</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
                   Engineering
                 </span>
               </div>
@@ -149,13 +149,13 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-accent-500 transition-colors">
+            <div className="bg-white border border-slate-200 rounded-xl p-8 hover:border-slate-400 transition-colors">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-900">Renewable Energy Analyst</h3>
                   <p className="text-slate-600">Remote • Full-time</p>
                 </div>
-                <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
                   Domain Expertise
                 </span>
               </div>

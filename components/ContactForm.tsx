@@ -130,7 +130,7 @@ export default function ContactForm() {
     w-full px-4 py-3 rounded-lg border transition-colors
     ${errors[fieldName] 
       ? 'border-red-500 focus:border-red-500 focus:ring-red-500' 
-      : 'border-slate-300 focus:border-accent-500 focus:ring-accent-500'
+      : 'border-slate-300 focus:border-slate-500 focus:ring-slate-500'
     }
     focus:outline-none focus:ring-2
   `

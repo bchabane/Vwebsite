@@ -26,8 +26,8 @@ export default function Button({
   const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
 
   const variantClasses = {
-    primary: 'bg-accent-600 text-white hover:bg-accent-700 focus-visible:outline-accent-600 shadow-sm hover:shadow-md',
-    secondary: 'bg-slate-900 text-white hover:bg-slate-800 focus-visible:outline-slate-900 shadow-sm hover:shadow-md',
+    primary: 'bg-slate-700 text-white hover:bg-slate-800 focus-visible:outline-slate-600 shadow-sm hover:shadow-md',
+    secondary: 'bg-slate-900 text-white hover:bg-black focus-visible:outline-slate-900 shadow-sm hover:shadow-md',
     outline: 'border-2 border-slate-300 text-slate-900 hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-slate-900',
   }
 

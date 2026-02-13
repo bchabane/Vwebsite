@@ -29,7 +29,7 @@ export default function UseCaseSection({
           {items.map((item, index) => (
             <li key={index} className="flex items-start">
               <svg
-                className="w-6 h-6 text-accent-600 mr-3 flex-shrink-0 mt-0.5"
+                className="w-6 h-6 text-slate-600 mr-3 flex-shrink-0 mt-0.5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

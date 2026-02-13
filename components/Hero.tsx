@@ -32,7 +32,7 @@ export default function Hero({
       <Container size="large">
         <div className="max-w-4xl mx-auto text-center">
           {subtitle && (
-            <p className="text-accent-600 font-semibold text-sm md:text-base uppercase tracking-wide mb-4">
+            <p className="text-slate-600 font-semibold text-sm md:text-base uppercase tracking-wide mb-4">
               {subtitle}
             </p>
           )}

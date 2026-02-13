@@ -55,13 +55,13 @@
 .gradient-accent {
   background: linear-gradient(
     135deg,
-    #0d9488 0%,
-    #14b8a6 100%
+    #1e293b 0%,
+    #334155 100%
   );
 }
 
 /* Focus visible styles for accessibility */
 :focus-visible {
-  @apply outline-2 outline-offset-2 outline-accent-600;
+  @apply outline-2 outline-offset-2 outline-slate-600;
 }
 
